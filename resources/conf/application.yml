@@ -1,0 +1,25 @@
+server:
+  
+  static:
+    enabled: false
+
+  urouting:
+    default-content-type: "application/json"
+
+  auth:
+    # security-context-factory: kikaha.hazelcast.HazelcastSecurityContextFactory
+    # security-context-factory: kikaha.core.modules.security.RESTAPISecurityContextFactory
+
+    # Configuration for fixed-user-and-pass Identity Manager
+    fixed-auth:
+      username: "admin"
+      password: "admin"
+
+  datasources:
+
+    default:
+      jdbc-url: "jdbc:mysql://localhost/sizebay_unittest"
+      username: "sizebay"
+      password: "sizebay0z6g1t1t"
+      log-query-execution-longer-than-ms: 0
+      log-stacktrace-for-long-query-execution: false
